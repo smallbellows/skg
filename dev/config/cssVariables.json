@@ -1,16 +1,20 @@
 {
 	"variables": {
-		"global-font-color": "#333",
-		"global-font-family": "'Crimson Text', serif",
+		"global-background-color" : "rgba(226,240,255, 0.5)",
+		"global-font-color": "#1C2A43",
+		"global-font-family": "'Raleway', sans-serif",
 		"global-font-size": "20",
 		"global-font-line-height": "1.4",
-		"highlight-font-family": "'Roboto Condensed', sans-serif",
+		"highlight-font-family": "'Cutive', serif",
+		"monospace-font-family" : "'Cutive Mono', 'monospace'",
 		"content-width": "45",
 		"dropdown-symbol-width": "0.7em",
 		"small-font-size": "16",
 		"regular-font-size": "20",
 		"large-font-size": "36",
-		"larger-font-size": "48"
+		"larger-font-size": "48",
+		"link-color" : "#1C2A43",
+		"link-underline" : "1px solid #4B5773"
 	},
 	"queries": {
 		"narrow-menu-query": "screen and (max-width: 37.5em)",

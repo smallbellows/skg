@@ -229,25 +229,33 @@ function wprig_fonts_url() {
 	$fonts_url = '';
 
 	/**
-	 * Translator: If Roboto Sans does not support characters in your language, translate this to 'off'.
+	 * Translator: If Cutive does not support characters in your language, translate this to 'off'.
 	 */
-	$roboto = esc_html_x( 'on', 'Roboto Condensed font: on or off', 'wprig' );
+	$cutive = esc_html_x( 'on', 'Cutive font: on or off', 'wprig' );
 	/**
-	 * Translator: If Crimson Text does not support characters in your language, translate this to 'off'.
+	 * Translator: If Cutive Mono does not support characters in your language, translate this to 'off'.
 	 */
-	$crimson_text = esc_html_x( 'on', 'Crimson Text font: on or off', 'wprig' );
+	$cutive_mono = esc_html_x( 'on', 'Cutive Mono font: on or off', 'wprig' );
+	/**
+	 * Translator: If Raleway does not support characters in your language, translate this to 'off'.
+	 */
+	$raleway = esc_html_x( 'on', 'Raleway font: on or off', 'wprig' );
 
 	$font_families = array();
 
-	if ( 'off' !== $roboto ) {
-		$font_families[] = 'Roboto Condensed:400,400i,700,700i';
+	if ( 'off' !== $cutive ) {
+		$font_families[] = 'Cutive';
 	}
 
-	if ( 'off' !== $crimson_text ) {
-		$font_families[] = 'Crimson Text:400,400i,600,600i';
+	if ( 'off' !== $cutive_mono ) {
+		$font_families[] = 'Cutive Mono';
 	}
 
-	if ( in_array( 'on', array( $roboto, $crimson_text ) ) ) {
+	if ( 'off' !== $raleway ) {
+		$font_families[] = 'Raleway:400,800';
+	}
+
+	if ( in_array( 'on', array( $cutive, $cutive_mono, $raleway ) ) ) {
 		$query_args = array(
 			'family' => urlencode( implode( '|', $font_families ) ),
 			'subset' => urlencode( 'latin,latin-ext' ),

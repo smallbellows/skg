@@ -1,5 +1,5 @@
 /*!
-Theme Name: WP Rig
+Theme Name: skg
 Theme URI: https://github.com/wprig/wprig/
 Author: Morten Rand-Hendriksen et.al.
 Author URI: https://github.com/wprig/wprig/
@@ -481,7 +481,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--highlight-font-family);
-	color: #32373c;
+	color: var(--global-font-color);
 	clear: both;
 }
 
@@ -549,7 +549,7 @@ html {
 }
 
 body {
-	background: #fff;
+	background: var(--global-background-color);
 	/* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
@@ -608,12 +608,10 @@ table {
 /*--------------------------------------------------------------
 # Links
 --------------------------------------------------------------*/
-a {
-	color: #0073aa;
-}
-
-a:visited {
-	color: #333;
+a, a:visited {
+	color: var(--link-color);
+	text-decoration: none;
+	border-bottom: var(--link-underline);
 }
 
 a:hover, a:focus, a:active {
@@ -745,17 +743,17 @@ textarea {
 	font-size: 38px;
 	font-weight: bold;
 	line-height: 1.2;
-	color: #333332;
 }
 
 .site-title a {
 	text-decoration: none;
-	color: inherit;
+	color: var(--global-font-color);
+	border: none;
 }
 
 .site-description {
 	margin: .4375em 0 0;
-	font-family: var(--highlight-font-family);
+	font-family: var(--global-font-family);
 	font-size: 17px;
 	font-weight: inherit;
 	line-height: 1.4;
@@ -793,6 +791,7 @@ textarea {
 	padding: .5em 1em .5em 0;
 	text-decoration: none;
 	color: black;
+	border: none;
 }
 
 .main-navigation a:hover,
