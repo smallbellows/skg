@@ -2,14 +2,14 @@
 
 module.exports = {
 	theme: {
-		slug: 'wprig',
-		name: 'WP Rig',
-		author: 'Morten Rand-Hendriksen'
+		slug: 'skg',
+		name: 'skg',
+		author: 'Sara Given'
 	},
 	dev: {
 		browserSync: {
 			live: true,
-			proxyURL: 'wprig.test:8888',
+			proxyURL: 'localhost:8888/bookclub',
 			bypassPort: '8181'
 		},
 		browserslist: [ // See https://github.com/browserslist/browserslist
@@ -17,7 +17,7 @@ module.exports = {
 			'last 2 versions'
 		],
 		debug: {
-			styles: false, // Render verbose CSS for debugging.
+			styles: true, // Render verbose CSS for debugging.
 			scripts: false // Render verbose JS for debugging.
 		}
 	},
